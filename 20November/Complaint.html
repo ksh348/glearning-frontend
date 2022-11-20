@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="css/frm.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Complaint Form</h1>
+            <p>Read below instructions before proceeding:<br> Make sure you fill all the fileds where * is provided</p>
+        </header>
+        <form action="">
+            <article>
+                <h3>Name</h3>
+                <input type="text" title="name" required spellcheck="true">
+            </article>
+
+            <article>
+                <h3>Mobile No</h3>
+                <input type="number" min="6000000000" max="9999999999" required>
+            </article>
+
+            <article>
+                <h3>Email Address</h3>
+                <input type="email" required>
+            </article>
+
+            <article>
+                <h2>Address</h2>
+                <h3>H:No</h3>
+                <input type="text" required>
+
+                <h3>Street</h3>
+                <input type="text" required>
+
+                <h3>Area</h3>
+                <input type="text" required>
+
+                <h3>District</h3>
+                <select name="District" id="district" required>
+                    <option value="">Choose</option>
+                    <option value="Bangalore Urban">Bangalore Urban</option>
+                    <option value="Bangalore Rural">Bangalore Rural</option>
+                    <option value="Ramnagar">Ramnagar</option>
+                </select>
+            </article>
+
+            <article>
+                <h3>Choose the issue Type</h3>
+                <p>Check atleast one box without fail</p>
+                <input type="checkbox" id="c1" name="option1" value="Over Charge">
+                <label for="c1">Wrong News</label>
+                <br>
+                <input type="checkbox" id="c2" name="option2" value="Meter Board Not Working">
+                <label for="c2">Paper not given</label>
+                <br>
+                <input type="checkbox" id="c3" name="option3" value="Close the Meter">
+                <label for="c3">Paper Boy Misbehaviour</label>
+                <br>
+                <input type="checkbox" id="c4" name="option4" value="Hard Copy Not Provided">
+                <label for="c3">Payment portal issue</label>
+            </article>
+
+            <article>
+                <h3 class="nm">Do you have a Digital Subscription?</h3>
+                <input type="radio" id="c5" name="option" value="True" required>
+                <label for="c5">Yes</label>
+                <br>
+                <input type="radio" id="c6" name="option" value="False">
+                <label for="c6">No</label>
+            </article>
+            
+            <article>
+                <h3>Describe Your Issue</h3>
+                <textarea name="description" id="" cols="30" rows="10" required spellcheck="true"></textarea>
+            </article>
+
+            <button>Reset</button>
+            <button>Submit</button>
+        </form>
+        <footer>
+            This form is developed by GL Team. <br> Only Learners of Great Learning can use this form
+        </footer>
+    </section>
+</body>
+</html>

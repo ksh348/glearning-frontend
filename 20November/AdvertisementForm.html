@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advertisement Form</title>
+    <link rel="stylesheet" href="css/frm.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Advertisement Form</h1>
+            <p>Read below instructions before proceeding:<br> Make sure you fill all the fileds where * is provided</p>
+        </header>
+        <form action="SuccessPage.html">
+        
+            <article>
+                <h3> Company Name</h3>
+                <input type="text" title="name" required spellcheck="true">
+            </article>
+
+            <article>
+                <h3>Your Name</h3>
+                <input type="text" title="name" required spellcheck="true">
+            </article>
+
+            <article>
+                <h3>Phone No</h3>
+                <input type="number" min="6000000000" max="9999999999" required>
+            </article>
+
+            <article>
+                <h3>Email Address</h3>
+                <input type="email" required>
+            </article>
+
+            <article>
+                <h2>Company Address</h2>
+                <h3>H:No</h3>
+                <input type="text" required>
+
+                <h3>Street</h3>
+                <input type="text" required>
+
+                <h3>Area</h3>
+                <input type="text" required>
+
+                <h3>District</h3>
+                <select name="District" id="district" required>
+                    <option value="">Choose</option>
+                    <option value="Bangalore Urban">Bangalore Urban</option>
+                    <option value="Bangalore Rural">Bangalore Rural</option>
+                    <option value="Ramnagar">Ramnagar</option>
+                </select>
+            </article>
+
+            <article>
+                <h3>Type of Advertisement</h3>
+                <input type="radio" id="c5" name="option" value="Image" required>
+                <label for="c5">Image</label>
+                <br>
+                <input type="radio" id="c6" name="option" value="Video">
+                <label for="c6">Video</label>
+            </article>
+
+            <article>
+                <h3>Advertisement Area</h3>
+                <p>Check atleast one box without fail</p>
+                <input type="checkbox" id="c1" name="option1" value="Side of the article">
+                <label for="c1">Side of the article</label>
+                <br>
+                <input type="checkbox" id="c2" name="option2" value="Between the article">
+                <label for="c2">Between the article</label>
+                <br>
+                <input type="checkbox" id="c3" name="option3" value="End of the article">
+                <label for="c3">End of the article</label>
+            </article>
+
+            <article>
+                <h3>Advertisement Duration</h3>
+                <p>Check atleast one box without fail</p>
+                <label for="c1">Start date: </label>
+                <input type="date" required>
+                <br>
+                <label for="c1">End date: </label>
+                <input type="date" required>
+            </article>
+            
+            <article>
+                <h3>Total Cost</h3>
+                <p>Rs <span id="cost">10,000</span>/-</p>
+            </article>
+
+            <article>
+                <h3>Describe Your Advertisement</h3>
+                <textarea name="description" id="" cols="30" rows="10" required spellcheck="true"></textarea>
+            </article>
+
+            <article>
+                <h3>Upload file</h3>
+                <input type="file" required>
+            </article>
+            <button>Reset</button>
+            <button>Submit</button>
+        </form>
+ 
+ 		<footer>
+            This form is developed by GL Team. <br> Only Learners of Great Learning can use this form
+        </footer>
+ </section>
+ 
+</body>
+</html>
